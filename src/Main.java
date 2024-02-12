@@ -2,64 +2,106 @@ public class Main {
     public static void main(String[] args) {
 
         // Задача 1
-        var dog = 8.0;
-        var cat = 3.6;
-        var paper = 763789;
-        System.out.println(dog + "\n" + cat + "\n" + paper + "\n");
+        // int, byte, short, long, float, double
+        int one = 1;
+        byte two = 2;
+        short tree = 3;
+        long four = 4L;
+        float five = 5.0f;
+        double six = 6;
+        System.out.println(one + "\n" + two + "\n" + tree + "\n" + four  + "\n" + five + "\n" + six + "\n");
 
         // Задача 2
-        dog = dog + 4;
-        cat = cat + 4;
-        paper = paper + 4;
-        System.out.println(dog + "\n" + cat + "\n" + paper + "\n");
+        float seven = 27.12f;
+        long eight = 987678965549L;
+        double nine = 2.786;
+        short ten = 569;
+        short eleven = -159;
+        int twelve = 27897;
+        byte thirteen = 67;
 
         // Задача 3
-        dog = dog - 3.5;
-        cat = cat - 1.6;
-        paper = paper - 7639;
-        System.out.println(dog + "\n" + cat + "\n" + paper + "\n");
+        byte classOne = 23;
+        byte classTwo = 27;
+        byte classTree = 30;
+        short paper = 480;
+        int forOneStudent = paper / (classOne + classTwo + classTree);
 
+        System.out.println("На каждого ученика рассчитано " + forOneStudent + " листов бумаги");
+        System.out.println("\n");
         // Задача 4
-        var friend = 19;
-        System.out.println(friend);
-        friend = friend + 2;
-        System.out.println(friend);
-        friend = friend / 7;
-        System.out.println(friend + "\n");
+        //за 20 минут,
+        //в сутки,
+        //за 3 дня,
+        //за 1 месяц?
+        byte inOneMinute = 16 / 2;
+        int in20Minute = 20 * inOneMinute;
+        int in1Day = 24 * 60 * inOneMinute;
+        int in3Days = 3 * 24 * 60 * inOneMinute;
+        int in1Month = 30 * 24 * 60 * inOneMinute;
+
+        System.out.println("За 20 минут машина произвела " + in20Minute + " штук бутылок" + "\n" +
+                "За сутки машина произвела " + in1Day + " штук бутылок" + "\n" +
+                "За 3 дня машина произвела " + in3Days +" штук бутылок" + "\n" +
+                "За 1 месяц машина произвела " + in1Month + " штук бутылок" + "\n");
 
         // Задача 5
-        var frog = 3.5;
-        System.out.println(frog);
-        frog = frog * 10;
-        System.out.println(frog);
-        frog = frog / 3.5;
-        System.out.println(frog);
-        frog = frog + 4;
-        System.out.println(frog + "\n");
+        byte allBanks = 120;
+        byte forOneClass = 2 + 4;
+        int allClass = allBanks / forOneClass;
+        int needWhite = allClass * 2;
+        int needBrown = allClass * 4;
+        System.out.println("В школе, где " + allClass + " классов, нужно " +needWhite + " банок белой краски и " + needBrown + " банок коричневой краски" + "\n");
 
         // Задача 6
-        var firstBoxerWeight = 78.2;
-        var secondBoxerWeight = 82.7;
-        var sumBoxersWeight = firstBoxerWeight + secondBoxerWeight;
-        var subtractBoxersWeight = (firstBoxerWeight - secondBoxerWeight) * -1;
-        System.out.println("Общая масса двух бойцов: " + sumBoxersWeight + " кг");
-        System.out.println("Разница между массами бойцов: " + subtractBoxersWeight + " кг\n");
+        // Бананы — 5 штук (1 банан — 80 грамм).
+        // Молоко — 200 мл (100 мл = 105 грамм).
+        // Мороженое-пломбир — 2 брикета по 100 грамм.
+        // Яйца сырые – 4 яйца (1 яйцо — 70 грамм).
+        short bananas = 5 * 80;
+        short milk = 2 * 105;
+        short iceCream = 2 * 100;
+        short egg = 4 * 70;
+        int breakfastGram = bananas + milk + iceCream + egg;
+        double breakfastKilogram = breakfastGram / 1000.0;
+        System.out.println(breakfastKilogram + "\n");
+
 
         // Задача 7
-        var subtractBoxersWeight2 = (firstBoxerWeight - secondBoxerWeight) * -1;
-        var remainder = secondBoxerWeight % firstBoxerWeight;
-        System.out.println(subtractBoxersWeight2);
-        System.out.println("\"С помощь функции остаток от деления.\" " + remainder + "\n");
+        short excessWeight = 7000;
+        short minWeightLost = 250;
+        short maxWeightLost = 500;
+        int minDays = excessWeight / minWeightLost;
+        int maxDays = excessWeight / maxWeightLost;
+        System.out.println(minDays + "\n" + maxDays + "\n");
+
 
         // Задача 8
-        var totalWorkTime = 640;
-        var workerWorkTime = 8;
-        var totalWorkers = totalWorkTime / workerWorkTime;
-        System.out.println("Всего работников в компании — " + totalWorkers + " человек");
+        int masha = 67760;
+        int denis = 83690;
+        int kristina = 76230;
 
-        totalWorkers = totalWorkers + 94;
-        var newTotalWorkTime = workerWorkTime * totalWorkers;
-        System.out.println("Если в компании работает " + totalWorkers + " человек, то всего " + newTotalWorkTime + " часов работы может быть поделено между сотрудниками");
+        int masha100 = masha * 100;
+        int denis100 = denis * 100;
+        int kristina100 = kristina * 100;
+
+        int masha110 = masha100 * 11;
+        int denis110 = denis100 * 11;
+        int kristina110 = kristina100 * 11;
+
+
+        int masha10 = masha110 / 1000;
+        int denis10 = denis110 / 1000;
+        int kristina10 = kristina110 / 1000;
+
+        int mashaYear = masha10 * 12 - masha * 12;
+        int denisYear = denis10 * 12 - denis * 12;
+        int kristinaYear = kristina10 * 12 - kristina * 12;
+
+        System.out.println("Маша теперь получает " + masha10 + " рублей. Годовой доход вырос на " + mashaYear + " рублей" + "\n" +
+                "Денис теперь получает " + denis10 + " рублей. Годовой доход вырос на " + denisYear + " рублей" + "\n" +
+                "Кристина теперь получает " + kristina10 + " рублей. Годовой доход вырос на " + kristinaYear + " рублей" + "\n");
+
 
 
 
