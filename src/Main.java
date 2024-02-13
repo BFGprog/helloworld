@@ -81,18 +81,14 @@ public class Main {
         int denis = 83690;
         int kristina = 76230;
 
-        int masha100 = masha * 100;
-        int denis100 = denis * 100;
-        int kristina100 = kristina * 100;
-
-        int masha110 = masha100 * 11;
-        int denis110 = denis100 * 11;
-        int kristina110 = kristina100 * 11;
+        int masha110 = masha * 11;
+        int denis110 = denis * 11;
+        int kristina110 = kristina * 11;
 
 
-        int masha10 = masha110 / 1000;
-        int denis10 = denis110 / 1000;
-        int kristina10 = kristina110 / 1000;
+        int masha10 = masha110 / 10;
+        int denis10 = denis110 / 10;
+        int kristina10 = kristina110 / 10;
 
         int mashaYear = masha10 * 12 - masha * 12;
         int denisYear = denis10 * 12 - denis * 12;
@@ -101,8 +97,6 @@ public class Main {
         System.out.println("Маша теперь получает " + masha10 + " рублей. Годовой доход вырос на " + mashaYear + " рублей" + "\n" +
                 "Денис теперь получает " + denis10 + " рублей. Годовой доход вырос на " + denisYear + " рублей" + "\n" +
                 "Кристина теперь получает " + kristina10 + " рублей. Годовой доход вырос на " + kristinaYear + " рублей" + "\n");
-
-
 
 
 
